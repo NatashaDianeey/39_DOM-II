@@ -23,8 +23,7 @@
           <div class="name-container input-box">
             <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control"
-            placeholder="Ingrese su nombre">
-            <span id="errorError" style="display: none;">You must enter a valid email address</span>
+            placeholder="Ingrese su nombre" onblur="validate()">
           </div>
           <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
@@ -44,7 +43,7 @@
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
           </div>
           <div class="form-group input-box">
-            <select class="form-control">
+            <select id="selectoption" class="form-control">
               <option value="0">Selecciona tu tipo de bici</option>
               <option value="urbana">Urbana</option>
               <option value="treking">Treking</option>
